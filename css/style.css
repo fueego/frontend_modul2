@@ -66,3 +66,25 @@ section.slider {
     #main-slider .carousel-item {
         padding: 2rem 0;
     }
+
+/* Our target */
+section.our-target .our-targetour-target__info {
+
+}
+
+    .our-target__info .card .card-header {
+        position: relative;
+    }
+
+    .our-target__info .card .card-header > .card-header__icon-holder {
+        position: absolute;
+        top: 1rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 6rem;
+        height: 6rem;
+        background-color: #fff;
+        border: 1px solid #dedede;
+        border-radius: 10rem;
+    } 
