@@ -1,0 +1,49 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+
+    /* move text under navbar */
+    padding-top: 40px;
+}
+
+@keyframes linkAnimation {
+    0% {
+        padding-left: 0px;
+    }
+
+    50% {
+        padding-left: 5px;
+    }
+
+    100% {
+        padding-left: 0px;
+    }
+}
+
+header .navbar {
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+
+    transition: all .3s;
+    padding: .8rem;
+}
+
+header .navbar.scrolled {
+    opacity: .95;
+    padding: 0;
+}
+
+header .navbar-nav .nav-item {
+    padding: 0 .5rem;
+    transition: all .4s;
+    width: 125px;
+}
+
+    .nav-item .nav-link:hover > span {
+        animation-name: linkAnimation;
+        animation-duration: .4s;
+    }
+
