@@ -3,9 +3,10 @@ html, body {
     padding: 0px;
 
     /* move text under navbar */
-    padding-top: 40px;
+    padding-top: 2rem;
 }
 
+/* Main nav link animation */
 @keyframes linkAnimation {
     0% {
         padding-left: 0px;
@@ -20,6 +21,7 @@ html, body {
     }
 }
 
+/* Header transitions - size, opacity */
 header .navbar {
     -webkit-transition: all 0.4s ease-out;
     -moz-transition: all 0.4s ease-out;
@@ -47,3 +49,20 @@ header .navbar-nav .nav-item {
         animation-duration: .4s;
     }
 
+/* Main section style */
+section.slider {
+    margin: 0rem auto 2rem auto;
+    background: #dedede;
+}
+
+    #main-slider .carousel-indicators {
+        bottom: 2rem;
+    }
+
+    #main-slider .carousel-caption {
+        bottom: 4rem;
+    }
+
+    #main-slider .carousel-item {
+        padding: 2rem 0;
+    }
