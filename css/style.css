@@ -52,7 +52,7 @@ header .navbar-nav .nav-item {
 /* Main section style */
 section.slider {
     margin: 0rem auto 2rem auto;
-    background: #dedede;
+    background: #f0f0f0;
 }
 
     #main-slider .carousel-indicators {
@@ -88,3 +88,8 @@ section.our-target .our-targetour-target__info {
         border: 1px solid #dedede;
         border-radius: 10rem;
     } 
+
+/* Fakty */
+.facts {
+    background: #f0f0f0;
+}
