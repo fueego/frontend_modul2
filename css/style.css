@@ -90,10 +90,25 @@ section.our-target .our-targetour-target__info {
     } 
 
 /* Fakty */
-.facts {
+/* Contact */
+.facts,
+.contact {
     background: #f0f0f0;
 }
 
+.contact .card-body .card-header h5 button {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.contact .card-body .card-header h5 button.btn-link,
+.contact .card-body .card-header h5 button.btn-link:hover {
+    color: #666;
+}
+
+.contact .row + .row form {
+    height: 100%;
+}
 
 
 
