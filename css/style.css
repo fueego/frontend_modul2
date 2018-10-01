@@ -93,3 +93,26 @@ section.our-target .our-targetour-target__info {
 .facts {
     background: #f0f0f0;
 }
+
+
+
+
+
+
+@media ( max-width: 577px ) {
+    /* Teams */
+    .team .team__bio {
+        text-align: center;
+    }
+
+    .team .text-muted {
+        padding: 1rem 0;
+    }
+
+    .team .separator {
+        border-bottom: 1px solid #dedede;
+        margin: 1rem auto;
+        height: 1px;
+        width: 80%;
+    }
+}
