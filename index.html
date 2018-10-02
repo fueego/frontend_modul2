@@ -13,7 +13,7 @@
   <title>Moduł 2 - Projekt praktyczny</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#main-navbar">
 
   <header>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
@@ -26,28 +26,28 @@
         <div class="collapse navbar-collapse" id="main-navbar">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link active" href="#ourTarget">
                 <i class="fas fa-bullseye"></i>
                 <span>Nasz cel</span>
               </a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="#factas">
                 <i class="fas fa-unlock"></i>
                 <span>Fakty</span>
               </a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="#crew">
                 <i class="fas fa-users"></i>
                 <span>Zespół</span>
               </a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="#contactsScroll">
                 <i class="far fa-envelope"></i>
                 <span>Kontakt</span>
               </a>
@@ -102,6 +102,7 @@
           </div>
         </div>
       </div>
+      <div id="ourTarget"></div>
     </section>
 
     <section class="our-target my-5">
@@ -128,7 +129,13 @@
                   card's content.</p>
               </div>
               <div class="card-footer text-center">
-                <button class="btn btn-outline-dark btn-md" type="button">Dowiedz się więcej</button>
+                <button 
+                  class="btn btn-outline-dark btn-md" 
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#simpleModal">
+                    Dowiedz się więcej
+                </button>
               </div>
             </div>
           </div>
@@ -147,7 +154,13 @@
                   card's content.</p>
               </div>
               <div class="card-footer text-center">
-                <button class="btn btn-outline-dark btn-md" type="button">Dowiedz się więcej</button>
+                <button
+                  class="btn btn-outline-dark btn-md"
+                  data-toggle="modal"
+                  data-target="#simpleModal2"
+                  type="button">
+                    Dowiedz się więcej
+                </button>
               </div>
             </div>
           </div>
@@ -166,12 +179,19 @@
                   card's content.</p>
               </div>
               <div class="card-footer text-center">
-                <button class="btn btn-outline-dark btn-md" type="button">Dowiedz się więcej</button>
+                <button
+                  class="btn btn-outline-dark btn-md"
+                  data-toggle="modal"
+                  data-target="#simpleModal"
+                  type="button">
+                    Dowiedz się więcej
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div id="factas"></div>
     </section>
 
     <section class="facts my-5">
@@ -243,6 +263,7 @@
           </div>
         </div>
       </div>
+      <div id="crew"></div>
     </section>
 
     <section class="team my-5">
@@ -295,6 +316,7 @@
           </div>
         </div>
       </div>
+      <div id="contactsScroll"></div>
     </section>
 
     <section class="contact mt-5">
@@ -430,7 +452,9 @@
         <div class="container text-white">
           <div class="row no-gutter">
             <div class="footer__head--copy col">Lorem, ipsum. &copy; 2018</div>
-            <div class="footer__head--goUp col text-right"><i class="fas fa-caret-up fa-2x"></i></div>
+            <div class="footer__head--goUp col text-right">
+              <i class="fas fa-caret-up fa-2x"></i>
+            </div>
           </div>
         </div>
       </div>
@@ -448,28 +472,28 @@
               <div class="footer__main--links col-md-12 col-lg-8">
                   <ul>
                     <li>
-                      <a href="#">
+                      <a href="#ourTarget">
                         <i class="fas fa-bullseye"></i>
                         <span>Nasz cel</span>
                       </a>
                     </li>
         
                     <li>
-                      <a href="#">
+                      <a href="#factas">
                         <i class="fas fa-unlock"></i>
                         <span>Fakty</span>
                       </a>
                     </li>
         
                     <li>
-                      <a href="#">
+                      <a href="#crew">
                         <i class="fas fa-users"></i>
                         <span>Zespół</span>
                       </a>
                     </li>
         
                     <li>
-                      <a href="#">
+                      <a href="#contactsScroll">
                         <i class="far fa-envelope"></i>
                         <span>Kontakt</span>
                       </a>
@@ -481,6 +505,47 @@
       </div>
     </section>
   </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="simpleModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">Lorem, ipsum dolor.</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span>&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat ducimus ipsam nisi natus ullam minima vel magnam quis! Nam repudiandae amet sint non dolor? Nam laborum doloremque quis architecto magni!
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+            <button type="button" class="btn btn-primary">Ok</button>
+        </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="simpleModal2" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">Lorem, ipsum dolor.</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span>&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat ducimus ipsam nisi natus ullam minima vel magnam quis! Nam repudiandae amet sint non dolor? Nam laborum doloremque quis architecto magni!
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Zamknij</button>
+            <button type="button" class="btn btn-success" data-dismiss="modal">Ok</button>
+        </div>
+        </div>
+    </div>
+  </div>
 
   <script src="http://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
